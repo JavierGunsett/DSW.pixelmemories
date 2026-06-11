@@ -1,86 +1,100 @@
 @charset "UTF-8";
-.header {
+.main-header {
   position: relative;
-  min-height: 40rem;
   background-image: url("../img/banner.png");
   background-size: cover;
-  background-position: center -20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  /*&::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-
-      background: rgba(0, 0, 0, 0.35);
-  }*/
 }
-
-.navbar {
-  position: relative;
-  z-index: 2;
+.main-header .navbar {
   padding-top: 1.5rem;
 }
-
-.navbar-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-}
-.navbar-brand img {
-  width: 16rem;
+.main-header .navbar .logo-img {
+  width: 15rem;
   height: auto;
+  padding-left: 0.8rem;
 }
-.navbar-brand span {
-  margin-top: 0.25rem;
-  font-size: 0.7rem;
-  font-weight: 700;
+.main-header .navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
   letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.main-header .navbar .nav-link:hover, .main-header .navbar .nav-link.active {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.main-header .navbar .navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.main-header .navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
 
-.navbar-nav {
-  gap: 2rem;
+.hero-content {
+  flex-grow: 1;
+  padding: 3rem 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.hero-content h1, .hero-content .h1 {
+  font-family: "Georgia", serif;
+  letter-spacing: 2px;
+}
+.hero-content p {
+  max-width: 650px;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
-.nav-link {
-  color: white !important;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+@media (max-width: 767.98px) {
+  .main-header {
+    min-height: 85vh;
+  }
+  .main-header .navbar {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+  }
+  .main-header .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 10;
+  }
+  .main-header .navbar .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+  .main-header .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 75%;
+    left: 0px;
+    right: 0px;
+  }
+  .main-header .navbar-collapse .nav-item {
+    margin: 0.8rem 0;
+  }
+  .main-header .hero-content {
+    padding: 2rem 1rem;
+  }
+  .main-header .hero-content h1, .main-header .hero-content .h1 {
+    font-size: 2.5rem;
+  }
+  .main-header .hero-content p {
+    font-size: 1rem;
+  }
 }
-.nav-link:hover {
-  opacity: 0.6;
-}
-
-.header-contenido {
-  position: relative;
-  z-index: 2;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 0 1rem;
-}
-.header-contenido h1, .header-contenido .h1 {
-  font-family: Georgia, serif;
-  font-size: 4.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.header-contenido p {
-  max-width: 700px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
