@@ -65,7 +65,7 @@ $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 // Media Query para Tablets y Teléfonos (Menos de 768px)
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .main-header {
     min-height: 85vh; 
     
@@ -115,6 +115,81 @@ $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
         p { font-size: 1rem; }
         }
     }
+}
+
+//////////////////////////////
+/////     FOOTER        /////
+////////////////////////////
+// Paleta de colores para el Footer
+$footer-bg: #1d1107;            // Marrón café muy oscuro
+$footer-link-color: #ffffff;
+$footer-link-hover: #bda38f;    // Tono arena/bronce para el hover
+$footer-divider-color: rgba(255, 255, 255, 0.1);
+
+.footer {
+  background-color: $footer-bg;
+  //padding: 3.5rem 0 1.5rem 0; // Más aire arriba, sutil abajo
+  color: $footer-link-color;
+
+  // Enlaces de navegación del footer
+  .footer-links {
+    li {
+      @media (min-width: 768px) {
+        display: inline-block;
+        margin-right: 2rem; // Se ponen en fila horizontal en PC
+        margin-bottom: 0 !important;
+      }
+    }
+
+    a {
+      color: rgba($footer-link-color, 0.85);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $footer-link-hover;
+      }
+    }
+  }
+
+  // Contenedor de fuentes secundarias (Ej: "Buscanos en...")
+  .font-secondary {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  // Iconos de Redes Sociales
+  .footer-socials {
+    a {
+      color: rgba($footer-link-color, 0.85);
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: inline-block;
+
+      &:hover {
+        color: $footer-link-hover;
+        transform: translateY(-3px); // Sutil animación hacia arriba al pasar el mouse
+      }
+      
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  // Línea de separación
+  .footer-divider {
+    border-top: 1px solid $footer-divider-color;
+    opacity: 1;
+  }
+
+  // Texto de propiedad intelectual
+  .copyright-text {
+    font-size: 0.75rem;
+    color: rgba($footer-link-color, 0.4);
+    //letter-spacing: 0.5px;
+  }
 }
 
 

@@ -51,7 +51,7 @@
   line-height: 1.8;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .main-header {
     min-height: 85vh;
   }
@@ -95,6 +95,52 @@
     font-size: 1rem;
   }
 }
+.footer {
+  background-color: #1d1107;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .footer .footer-links li {
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 0 !important;
+  }
+}
+.footer .footer-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.footer .footer-links a:hover {
+  color: #bda38f;
+}
+.footer .font-secondary {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+.footer .footer-socials a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+.footer .footer-socials a:hover {
+  color: #bda38f;
+  transform: translateY(-3px);
+}
+.footer .footer-socials a svg {
+  vertical-align: middle;
+}
+.footer .footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
+.footer .copyright-text {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
