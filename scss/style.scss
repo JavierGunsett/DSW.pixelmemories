@@ -1,5 +1,9 @@
 $header-bg-image: url('../img/banner.png');
 $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
+$primary: #2b1608; //color primario
+$color-secundario: #ebdbce; 
+$body-bg: $color-secundario;
+
 
 .main-header {
     position: relative;
@@ -18,8 +22,7 @@ $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
         .logo-img {
         width: 15rem; // Aumentado el tamaño (antes 50px)
         height: auto;
-        padding-left: 0.8rem;
-        //transition: height 0.3s ease;
+        padding-left: 0.8rem;               
         }
         
         .nav-link {
@@ -28,9 +31,9 @@ $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
         letter-spacing: 1px;
         transition: color 0.3s ease;
 
-        &:hover, &.active {
-            color: #fff;
-            text-shadow: $text-shadow-dark;
+        &:hover{//}, &.active {
+            color: $color-secundario;
+            //text-shadow: $text-shadow-dark;
         }
         }
 
@@ -117,11 +120,35 @@ $text-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.6);
     }
 }
 
+
+
+//////////////////////////////
+//////      Sections    /////
+//////////////////////////// 
+.img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px; // Suaviza un poco las esquinas como en el diseño original
+}
+
+.custom-section-img {
+  width: 100%;
+  //height: 25rem;       // Ajusta este alto a tu gusto (hace que midan igual)
+  object-fit: cover;   // Hace que la imagen se recorte inteligentemente en lugar de aplastarse
+  object-position: center;
+}
+
+// Media query para ajustar el alto en pantallas más grandes si lo deseas
+@media (min-width: 768px) {
+  .custom-section-img {
+    height: 320px;     // Un poco más altas en PC para que luzcan mejor con el texto al lado
+  }
+}
 //////////////////////////////
 /////     FOOTER        /////
 ////////////////////////////
 // Paleta de colores para el Footer
-$footer-bg: #1d1107;            // Marrón café muy oscuro
+$footer-bg: $primary;            
 $footer-link-color: #ffffff;
 $footer-link-hover: #bda38f;    // Tono arena/bronce para el hover
 $footer-divider-color: rgba(255, 255, 255, 0.1);
@@ -184,11 +211,9 @@ $footer-divider-color: rgba(255, 255, 255, 0.1);
     opacity: 1;
   }
 
-  // Texto de propiedad intelectual
   .copyright-text {
     font-size: 0.75rem;
     color: rgba($footer-link-color, 0.4);
-    //letter-spacing: 0.5px;
   }
 }
 
