@@ -1,94 +1,647 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
-    <title>Galeria - Pixel Memories</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explorá la galería fotográfica de Pixel Memories con trabajos de eventos, cumpleaños infantiles, retratos y sesiones familiares en Santa Fe."
+    >
+
+    <meta
+        name="keywords"
+        content="galería fotográfica, fotografía de eventos, cumpleaños infantiles, sesiones familiares, retratos, fotógrafo Santa Fe"
+    >
+
+    <meta name="author" content="Pixel Memories">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <title>Galería de trabajos | Pixel Memories</title>
 </head>
+
 <body>
 
-<header class="main-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent position-relative">
-        <div class="container">
-        
-        <a class="navbar-brand" href="index.html">
-            <img src="img/icon.png" alt="Pixel Memories" class="logo-img">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto text-uppercase fw-semibold text-center text-md-start">
-                <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
+    <!-- Encabezado -->
+    <header class="main-header">
 
-        </div>
-    </nav>
+        <nav
+            class="navbar navbar-expand-md navbar-dark bg-transparent position-relative"
+            aria-label="Navegación principal"
+        >
+            <div class="container">
 
-    <div class="hero-content container text-center text-white d-flex flex-column justify-content-center align-items-center">
-        <h1 class="display-3 fw-bold mb-3">Bienvenidos</h1>
-        <p class="lead max-w-ch">
-        Me gusta que una imagen logre decir mucho más que mil palabras, y que a través de los ojos de las personas, podamos conocer su mundo.
-        </p>
-    </div>
-</header>
+                <a
+                    class="navbar-brand"
+                    href="index.html"
+                    aria-label="Ir a la página principal de Pixel Memories"
+                >
+                    <img
+                        src="img/icon.png"
+                        alt="Logotipo de Pixel Memories"
+                        class="logo-img"
+                    >
+                </a>
 
-<!--Escriban aca-->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar menú de navegación"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<!--Hasta aca-->
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav ms-auto text-uppercase fw-semibold text-center text-md-start">
 
-<footer class="footer">
-    <div class="container">
-        <div class="row align-items-center gy-4">
-        
-        <div class="col-md-6 text-center text-md-start">
-            <ul class="footer-links list-unstyled m-0 text-uppercase fw-semibold">
-            <li class="mb-2"><a href="servicios.html">Servicios</a></li>
-            <li class="mb-2"><a href="galeria.html">Galería</a></li>
-            <li class="mb-0"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        
-        <div class="col-md-6 text-center text-md-end">
-            <h6>Buscanos en nuestras redes</h2>
-            <!-- <p class="mb-2 text-uppercase fw-semibold text-white-50 small font-secondary">Buscanos en nuestras redes</p> -->
-            <div class="footer-socials d-flex justify-content-center justify-content-md-end gap-3">
-            <a href="#" target="_blank" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg>
-            </a>
-            <a href="#" target="_blank" aria-label="TikTok">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                </svg>
-            </a>
-            <a href="#" target="_blank" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                </svg>
-            </a>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="servicios.html"
+                            >
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="galeria.html"
+                                aria-current="page"
+                            >
+                                Galería
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="contacto.html"
+                            >
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
+        </nav>
+
+        <div
+            class="hero-content container text-center text-white d-flex flex-column justify-content-center align-items-center"
+        >
+            <h1 class="display-3 fw-bold mb-3">
+                Nuestra galería
+            </h1>
+
+            <p class="lead max-w-ch">
+                Cada fotografía guarda una historia. Descubrí algunos de los
+                momentos que tuvimos la oportunidad de transformar en recuerdos.
+            </p>
         </div>
 
-        </div>
+    </header>
 
-        <hr class="my-4 footer-divider">
-        <div class="row">
-        <div class="col-12 text-center">
-            <p class="copyright-text mb-0">&copy; 2026 Pixel Memories S.A. Todos los derechos reservados.</p>
-        </div>
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Introducción -->
+        <section
+            class="py-5 text-center"
+            aria-labelledby="titulo-galeria"
+        >
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8">
+
+                        <h2
+                            id="titulo-galeria"
+                            class="mb-4"
+                        >
+                            Momentos que permanecen
+                        </h2>
+
+                        <p class="lead text-muted">
+                            En esta selección reunimos algunos de nuestros trabajos
+                            de eventos, cumpleaños, retratos y sesiones familiares.
+                            Hacé clic sobre cualquier imagen para verla ampliada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section
+            class="pb-5"
+            aria-label="Galería de trabajos fotográficos"
+        >
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <!-- Imagen 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 1.png"
+                            data-descripcion="Trabajo fotográfico número 1 de Pixel Memories"
+                            aria-label="Ampliar fotografía 1"
+                        >
+                            <img
+                                src="img/Galeria Img 1.png"
+                                alt="Trabajo fotográfico número 1 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 2.png"
+                            data-descripcion="Trabajo fotográfico número 2 de Pixel Memories"
+                            aria-label="Ampliar fotografía 2"
+                        >
+                            <img
+                                src="img/Galeria Img 2.png"
+                                alt="Trabajo fotográfico número 2 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 3.png"
+                            data-descripcion="Trabajo fotográfico número 3 de Pixel Memories"
+                            aria-label="Ampliar fotografía 3"
+                        >
+                            <img
+                                src="img/Galeria Img 3.png"
+                                alt="Trabajo fotográfico número 3 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 4.png"
+                            data-descripcion="Trabajo fotográfico número 4 de Pixel Memories"
+                            aria-label="Ampliar fotografía 4"
+                        >
+                            <img
+                                src="img/Galeria Img 4.png"
+                                alt="Trabajo fotográfico número 4 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 5 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 5.png"
+                            data-descripcion="Trabajo fotográfico número 5 de Pixel Memories"
+                            aria-label="Ampliar fotografía 5"
+                        >
+                            <img
+                                src="img/Galeria Img 5.png"
+                                alt="Trabajo fotográfico número 5 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 6 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 6.png"
+                            data-descripcion="Trabajo fotográfico número 6 de Pixel Memories"
+                            aria-label="Ampliar fotografía 6"
+                        >
+                            <img
+                                src="img/Galeria Img 6.png"
+                                alt="Trabajo fotográfico número 6 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 7 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 7.png"
+                            data-descripcion="Trabajo fotográfico número 7 de Pixel Memories"
+                            aria-label="Ampliar fotografía 7"
+                        >
+                            <img
+                                src="img/Galeria Img 7.png"
+                                alt="Trabajo fotográfico número 7 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 8 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 8.png"
+                            data-descripcion="Trabajo fotográfico número 8 de Pixel Memories"
+                            aria-label="Ampliar fotografía 8"
+                        >
+                            <img
+                                src="img/Galeria Img 8.png"
+                                alt="Trabajo fotográfico número 8 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 9 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 9.png"
+                            data-descripcion="Trabajo fotográfico número 9 de Pixel Memories"
+                            aria-label="Ampliar fotografía 9"
+                        >
+                            <img
+                                src="img/Galeria Img 9.png"
+                                alt="Trabajo fotográfico número 9 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 10 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 10.png"
+                            data-descripcion="Trabajo fotográfico número 10 de Pixel Memories"
+                            aria-label="Ampliar fotografía 10"
+                        >
+                            <img
+                                src="img/Galeria Img 10.png"
+                                alt="Trabajo fotográfico número 10 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 11 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 11.png"
+                            data-descripcion="Trabajo fotográfico número 11 de Pixel Memories"
+                            aria-label="Ampliar fotografía 11"
+                        >
+                            <img
+                                src="img/Galeria Img 11.png"
+                                alt="Trabajo fotográfico número 11 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 12 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 12.png"
+                            data-descripcion="Trabajo fotográfico número 12 de Pixel Memories"
+                            aria-label="Ampliar fotografía 12"
+                        >
+                            <img
+                                src="img/Galeria Img 12.png"
+                                alt="Trabajo fotográfico número 12 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 13 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 13.png"
+                            data-descripcion="Trabajo fotográfico número 13 de Pixel Memories"
+                            aria-label="Ampliar fotografía 13"
+                        >
+                            <img
+                                src="img/Galeria Img 13.png"
+                                alt="Trabajo fotográfico número 13 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                    <!-- Imagen 14 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <button
+                            type="button"
+                            class="galeria-boton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria"
+                            data-imagen="img/Galeria Img 14.png"
+                            data-descripcion="Trabajo fotográfico número 14 de Pixel Memories"
+                            aria-label="Ampliar fotografía 14"
+                        >
+                            <img
+                                src="img/Galeria Img 14.png"
+                                alt="Trabajo fotográfico número 14 de Pixel Memories"
+                                class="img-fluid galeria-img"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section
+            class="py-5 bg-light text-center"
+            aria-labelledby="titulo-contacto-galeria"
+        >
+            <div class="container">
+
+                <h2 id="titulo-contacto-galeria">
+                    ¿Querés fotos como estas?
+                </h2>
+
+                <p class="lead text-muted mb-4">
+                    Contanos qué tipo de evento o sesión estás organizando
+                    y consultá por disponibilidad.
+                </p>
+
+                <a
+                    href="contacto.html"
+                    class="btn btn-primary btn-lg"
+                >
+                    Solicitar presupuesto
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal para ampliar imágenes -->
+    <div
+        class="modal fade"
+        id="modalGaleria"
+        tabindex="-1"
+        aria-labelledby="tituloModalGaleria"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content bg-dark">
+
+                <div class="modal-header border-0">
+
+                    <h2
+                        class="modal-title fs-5 text-white"
+                        id="tituloModalGaleria"
+                    >
+                        Fotografía de Pixel Memories
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar imagen ampliada"
+                    ></button>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img
+                        id="imagenModalGaleria"
+                        src=""
+                        alt=""
+                        class="img-fluid modal-galeria-img"
+                    >
+
+                </div>
+
+            </div>
+
         </div>
     </div>
-</footer> 
 
+    <!-- Pie de página -->
+    <footer class="footer">
 
-    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <div class="container">
+
+            <div class="row align-items-center gy-4">
+
+                <div class="col-md-6 text-center text-md-start">
+
+                    <nav aria-label="Navegación del pie de página">
+
+                        <ul class="footer-links list-unstyled m-0 text-uppercase fw-semibold">
+
+                            <li class="mb-2">
+                                <a href="servicios.html">
+                                    Servicios
+                                </a>
+                            </li>
+
+                            <li class="mb-2">
+                                <a href="galeria.html">
+                                    Galería
+                                </a>
+                            </li>
+
+                            <li class="mb-0">
+                                <a href="contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    <h2 class="h6">
+                        Buscanos en nuestras redes
+                    </h2>
+
+                    <div
+                        class="footer-socials d-flex justify-content-center justify-content-md-end gap-3"
+                    >
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visitar Instagram de Pixel Memories"
+                        >
+                            Instagram
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visitar TikTok de Pixel Memories"
+                        >
+                            TikTok
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visitar Facebook de Pixel Memories"
+                        >
+                            Facebook
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="my-4 footer-divider">
+
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <p class="copyright-text mb-0">
+                        &copy; 2026 Pixel Memories S.A. Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para cargar la imagen seleccionada en el modal -->
+    <script>
+        const modalGaleria = document.getElementById("modalGaleria");
+
+        modalGaleria.addEventListener("show.bs.modal", function (evento) {
+            const botonSeleccionado = evento.relatedTarget;
+            const rutaImagen = botonSeleccionado.getAttribute("data-imagen");
+            const descripcionImagen =
+                botonSeleccionado.getAttribute("data-descripcion");
+
+            const imagenModal =
+                document.getElementById("imagenModalGaleria");
+
+            imagenModal.src = rutaImagen;
+            imagenModal.alt = descripcionImagen;
+        });
+    </script>
+
 </body>
 </html>
+```
