@@ -302,4 +302,99 @@ $footer-divider-color: rgba(255, 255, 255, 0.1);
     }
 }
 
+/* Flechas del carrusel de testimonios */
+#carouselTestimonios .carousel-control-prev,
+#carouselTestimonios .carousel-control-next {
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(53, 24, 5, 0.85);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#carouselTestimonios .carousel-control-prev {
+    left: 2rem;
+}
+
+#carouselTestimonios .carousel-control-next {
+    right: 2rem;
+}
+
+#carouselTestimonios .carousel-control-prev:hover,
+#carouselTestimonios .carousel-control-next:hover {
+    background-color: #010100;
+}
+
+#carouselTestimonios .carousel-control-prev-icon,
+#carouselTestimonios .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    #carouselTestimonios .carousel-control-prev,
+    #carouselTestimonios .carousel-control-next {
+        width: 44px;
+        height: 44px;
+    }
+
+    #carouselTestimonios .carousel-control-prev {
+        left: 0.5rem;
+    }
+
+    #carouselTestimonios .carousel-control-next {
+        right: 0.5rem;
+    }
+}
+
 @import "../lib/bootstrap/scss/bootstrap.scss";
+
+#carouselTestimonios .carousel-control-prev,
+#carouselTestimonios .carousel-control-next {
+    width: 52px !important;
+    height: 52px !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+    background-color: #351805 !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+#carouselTestimonios .carousel-control-prev {
+    left: 2rem !important;
+}
+
+#carouselTestimonios .carousel-control-next {
+    right: 2rem !important;
+}
+
+#carouselTestimonios .carousel-control-prev:hover,
+#carouselTestimonios .carousel-control-next:hover {
+    background-color: #5a2c0c !important;
+}
+
+#carouselTestimonios .carousel-control-prev-icon,
+#carouselTestimonios .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    #carouselTestimonios .carousel-control-prev,
+    #carouselTestimonios .carousel-control-next {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    #carouselTestimonios .carousel-control-prev {
+        left: 0.5rem !important;
+    }
+
+    #carouselTestimonios .carousel-control-next {
+        right: 0.5rem !important;
+    }
+}
+
