@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+.footer {
+  background-color: $footer-bg;
+  color: $footer-link-color;
+
+  .footer-links {
+    li {
+      @media (min-width: 768px) {
+        display: inline-block;
+        margin-right: 2rem;
+        margin-bottom: 0 !important;
+      }
+    }
+
+    a {
+      color: rgba($footer-link-color, 0.85);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $footer-link-hover;
+      }
+    }
+  }
+
+  .footer-socials {
+    a {
+      color: rgba($footer-link-color, 0.85);
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: inline-block;
+
+      &:hover {
+        color: $footer-link-hover;
+        transform: translateY(-3px);
+      }
+      
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .footer-divider {
+    border-top: 1px solid $footer-divider-color;
+    opacity: 1;
+  }
+
+  .copyright-text {
+    font-size: 0.75rem;
+    color: rgba($footer-link-color, 0.4);
+  }
+}

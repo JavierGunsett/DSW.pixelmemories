@@ -1,0 +1,13 @@
+// Variables de imágenes y fondos
+$header-bg-image: url('../img/banner.png');
+
+// Paleta de Colores Básica
+$primary: #2b1608; 
+$color-secundario: #ebdbce; 
+$body-bg: $color-secundario;
+
+// Configuración del Footer
+$footer-bg: $primary;            
+$footer-link-color: #ffffff;
+$footer-link-hover: $color-secundario;    
+$footer-divider-color: rgba(255, 255, 255, 0.1);

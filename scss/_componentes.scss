@@ -1,0 +1,77 @@
+/* Página de contacto */
+.contacto-formulario,
+.contacto-datos {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.contacto-datos address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+/* Mapa */
+.mapa-contenedor {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #e9ecef;
+
+  iframe {
+    display: block;
+    width: 100%;
+    min-height: 450px;
+  }
+}
+
+/* Toast */
+.toast {
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .mapa-contenedor iframe {
+    min-height: 350px;
+  }
+}
+
+/* Carrusel */
+#carouselTestimonios {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 52px !important;
+    height: 52px !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+    background-color: #351805 !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #5a2c0c !important;
+    }
+  }
+
+  .carousel-control-prev { left: 2rem !important; }
+  .carousel-control-next { right: 2rem !important; }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #carouselTestimonios {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 44px !important;
+      height: 44px !important;
+    }
+    .carousel-control-prev { left: 0.5rem !important; }
+    .carousel-control-next { right: 0.5rem !important; }
+  }
+}
